@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get(('/app_user/{id}', [AppUserController::class, 'app_user'])->name ('al.app_user'); {
     return view('welcome');
 });
